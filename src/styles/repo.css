@@ -1,0 +1,74 @@
+.container {
+  color: #fff;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+.repo-padding {
+  padding: 1em 0;
+}
+.repo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3em;
+  width: 90%;
+  gap: 24px;
+}
+.each-repo p {
+  margin-bottom: 0.5em;
+}
+.repo-link a {
+  color: goldenrod;
+}
+.repo-padding h2 {
+  font-size: 2rem;
+}
+.enclose {
+  border: 1px solid goldenrod;
+  padding: 1em;
+  margin: 2em;
+  border-radius: 6px;
+  box-shadow: 4px 3px 8px 2px black;
+}
+.route-page {
+  width: 100%;
+
+  padding: 1em 0;
+}
+.navigationBtn {
+  padding: 2em 0;
+  width: 90%;
+  max-width: 800px;
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  /* margin-left: 1em;
+  margin-top: 1em; */
+  margin: 0 auto;
+}
+.navigationBtn a {
+  padding: 0.5em;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-left: 0.5em;
+  border-radius: 4px;
+}
+.back-view {
+  padding: 2em 0;
+}
+.back-home {
+  color: goldenrod;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  font-weight: 800;
+  padding: 1em 1.4em;
+}
+@media (max-width: 700px) {
+  .repo-container {
+    grid-template-columns: 1fr;
+  }
+  .enclose {
+    margin: 1em;
+  }
+}
