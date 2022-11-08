@@ -1,6 +1,10 @@
 .footer {
-
-  padding: 2em;
+  padding: 1em 0;
   color: #fff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 0;
+  grid-area: "footer";
 }

@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .logo-container {
+  grid-area: "header";
 }
 .gitrepo-logo {
   width: 150px;

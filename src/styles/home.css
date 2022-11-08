@@ -1,5 +1,6 @@
 .homepage {
   padding: 0.7em 0 0 0;
+  grid-area: "main";
 }
 .container {
   padding: 0 4em;
@@ -28,6 +29,7 @@
   background-color: goldenrod;
   padding: 2em 4em;
   border-radius: 6px;
+  margin-left: 1.5em;
   box-shadow: 9px 6px 10px 3px black;
 }
 .design {
@@ -90,5 +92,21 @@
   .copy-text {
     margin-top: 3em;
     margin-bottom: 3em;
+  }
+  .landing-view {
+    margin-left: 0;
+  }
+}
+@media (max-width: 350px) {
+  .landing-view {
+    padding: 2em 1em;
+  }
+  .first {
+    width: 25px;
+    height: 25px;
+  }
+  .linkToRepo {
+    padding: 0.5em 1em;
+    font-size: 0.8rem;
   }
 }

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ErrorBound from "./components/ErrorBound";
 import Notfound from "./components/Notfound";
+import NestedPage from "./components/NestedPage";
 function App() {
   return (
     <ErrorBound>
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/repo" element={<GitRepo />}>
-            <Route />
+            <Route path="/nested" element={<NestedPage />} />
           </Route>
           <Route path="*" element={<Notfound />} />
         </Routes>

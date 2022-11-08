@@ -76,7 +76,7 @@ export default function GitRepo() {
         </div>
       </div>
       <div className="back-view">
-        <Link to="/" className="back-home" target="_blank">
+        <Link to="/" className="back-home">
           Back to homepage
         </Link>
       </div>

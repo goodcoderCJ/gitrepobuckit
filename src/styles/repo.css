@@ -55,6 +55,7 @@
 }
 .back-view {
   padding: 2em 0;
+  margin-bottom: 6em;
 }
 .back-home {
   color: goldenrod;
@@ -63,6 +64,8 @@
   border: 1px solid #fff;
   font-weight: 800;
   padding: 1em 1.4em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 @media (max-width: 700px) {
   .repo-container {
@@ -70,5 +73,11 @@
   }
   .enclose {
     margin: 1em;
+  }
+}
+@media (max-width: 350px) {
+  .back-home {
+    padding: 0.5em 1.4em;
+    font-size: 0.8rem;
   }
 }
