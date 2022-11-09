@@ -6,12 +6,11 @@
 
 .App {
   background-image: radial-gradient(green, black);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 .fallback {
   width: 100px;
