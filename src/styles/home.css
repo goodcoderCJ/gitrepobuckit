@@ -1,6 +1,6 @@
 .homepage {
   padding: 0.7em 0 0 0;
-  grid-area: "main";
+  grid-area: main;
 }
 .container {
   padding: 0 4em;
