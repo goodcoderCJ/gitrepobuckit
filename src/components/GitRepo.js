@@ -48,7 +48,7 @@ export default function GitRepo() {
             </p>
             <p className="repo-link">
               <strong>Url: </strong>
-              <Link to={repo.html_url}>See each repo</Link>
+              <Link to={repo.owner.html_url} target="_blank">See each repo</Link>
             </p>
           </div>
           <Link to="/repo/nested" className="data">
