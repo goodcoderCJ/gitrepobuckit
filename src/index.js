@@ -12,9 +12,9 @@ root.render(
     <BrowserRouter>
       <Suspense
         fallback={
-          <diV className="fallback-container">
+          <div className="fallback-container">
             <div className="fallback"></div>
-          </diV>
+          </div>
         }
       >
         {Homes}

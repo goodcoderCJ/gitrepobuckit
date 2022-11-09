@@ -51,6 +51,7 @@ export default function GitRepo() {
               <Link to={repo.html_url}>See each repo</Link>
             </p>
           </div>
+          <Link to="/repo/nested">Data</Link>
         </div>
       );
     });
@@ -61,6 +62,8 @@ export default function GitRepo() {
         <h2>Here is my repo</h2>
         {loading && <div>loading...</div>}
         <div className="repo-container">{userData}</div>
+        <Outlet />
+
         <div className="route-page">
           <ReactPaginate
             previousLabel={"Previous"}
@@ -80,7 +83,6 @@ export default function GitRepo() {
           Back to homepage
         </Link>
       </div>
-      <Outlet />
     </div>
   );
 }

@@ -1,20 +1,23 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/nested.css";
 
-export default function NestedPage() {
-  const [info, setInfo] = useState([]);
-  function getData() {
-    fetch("https://api.github.com/users/goodcoderCJ/repos")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setInfo(data);
-        console.log(data);
-      });
-  }
-  useEffect(() => {
-    getData();
-  }, []);
-  return <></>;
+export default function NestedPage({ props }) {
+  return (
+    <div className="nested-page">
+      <p>
+        <strong className="id">Id : {props.id}</strong>
+      </p>
+      <p>
+        <strong>Pushed at: {props.pushed_at}</strong>
+      </p>
+      <p>
+        <strong>Updated at : {props.updated_at}</strong>
+      </p>
+      <p>
+        <strong>Size: {props.size}</strong>
+      </p>
+      <Link to={props.html_url}>View code</Link>
+    </div>
+  );
 }
